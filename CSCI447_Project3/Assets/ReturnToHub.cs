@@ -4,17 +4,17 @@ using UnityEngine;
 
 public class ReturnToHub : MonoBehaviour {
 
-	public GameObject exit;
+	//public GameObject exit;
 	public int count;
 
 	void Start () {
-		count = exit.GetComponent<Exit> ().orbCount;
+		//count = exit.GetComponent<Exit> ().orbCount;
 	}
 
 	void OnTriggerEnter(Collider other){
 		if (other.tag == "Player") {
 			Application.LoadLevel (0);
-			count += 1;
+			//count += 1;
 		}
 	}
 
